@@ -102,6 +102,24 @@
     });
   });
 
+  /* ---------- Servizi: "Scopri di più" ---------- */
+  document.querySelectorAll('.service-toggle').forEach(function (btn) {
+    var panel = document.getElementById(btn.getAttribute('aria-controls'));
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      btn.firstChild.nodeValue = open ? 'Scopri di più' : 'Mostra meno';
+      if (open) {
+        panel.classList.remove('is-open');
+        var done = function () { if (btn.getAttribute('aria-expanded') === 'false') panel.hidden = true; };
+        if (reduce) done(); else setTimeout(done, 420);
+      } else {
+        panel.hidden = false;
+        requestAnimationFrame(function () { requestAnimationFrame(function () { panel.classList.add('is-open'); }); });
+      }
+    });
+  });
+
   /* ---------- Modulo contatti ----------
      L'invio avviene SOLO se data-endpoint contiene l'URL di un servizio configurato
      (es. Formspree). Senza endpoint nessun invio viene simulato: si mostra un avviso

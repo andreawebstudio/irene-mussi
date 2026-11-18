@@ -73,7 +73,6 @@
           <li><a href="#a-chi-mi-rivolgo">A chi mi rivolgo</a></li>
           <li><a href="#approccio">Approccio</a></li>
           <li><a href="#servizi">Servizi</a></li>
-          <li><a href="#laboratori">Laboratori</a></li>
           <li><a href="#come-funziona">Come funziona</a></li>
           <li><a href="#dove-ricevo">Dove ricevo</a></li>
           <li><a href="#faq">FAQ</a></li>
@@ -196,19 +195,15 @@
         </header>
 
         <div class="orbit">
-          <div class="orbit-core reveal" aria-hidden="true">
-            <svg class="orbit-svg" viewBox="0 0 400 400" focusable="false">
-              <circle class="o-ring o-ring-1" cx="200" cy="200" r="190"/>
-              <circle class="o-ring o-ring-2" cx="200" cy="200" r="140"/>
-              <ellipse class="o-petal" cx="160" cy="215" rx="62" ry="92" transform="rotate(-28 160 215)"/>
-              <ellipse class="o-petal" cx="240" cy="215" rx="62" ry="92" transform="rotate(28 240 215)"/>
-              <circle class="o-dot" cx="200" cy="10" r="5"/>
-              <circle class="o-dot o-dot-sage" cx="390" cy="200" r="5"/>
-              <circle class="o-dot" cx="200" cy="390" r="5"/>
-              <circle class="o-dot o-dot-sage" cx="10" cy="200" r="5"/>
-            </svg>
-            <p class="orbit-center">La persona<br><em>al centro</em></p>
-          </div>
+          <figure class="arch reveal">
+            <span class="arch-frame" aria-hidden="true"></span>
+            <span class="arch-dot" aria-hidden="true"></span>
+            <div class="arch-media">
+              <img src="assets/approccio-mani.webp" width="720" height="960" loading="lazy" decoding="async"
+                   alt="Due mani che si sostengono con delicatezza, simbolo di ascolto e cura">
+            </div>
+            <figcaption class="arch-caption">La persona <em>al centro</em></figcaption>
+          </figure>
 
           <ul class="orbit-list">
             <li class="orbit-item orbit-tl reveal">
@@ -248,8 +243,10 @@
                    alt="Mani di un professionista appoggiate con delicatezza su spalle e collo durante un trattamento">
             </div>
             <div class="card-body">
-              <h3>Schiena, collo e testa</h3>
+              <h3>Dolori vertebrali e cefalee</h3>
               <p>Un percorso dedicato a chi convive con tensioni e dolori della colonna o con episodi ricorrenti di mal di testa, partendo da una valutazione attenta di postura e mobilità.</p>
+              <button type="button" class="service-toggle" aria-expanded="false" aria-controls="svc-more-1">Scopri di più<span class="service-toggle-icon" aria-hidden="true"></span></button>
+              <div class="service-more" id="svc-more-1" hidden><div>
               <div class="service-groups">
                 <div>
                   <p class="service-label">Dolori alla schiena</p>
@@ -260,6 +257,7 @@
                   <ul class="service-list"><li>Cefalee</li><li>Emicranie</li><li>Vertigini e acufeni</li></ul>
                 </div>
               </div>
+              </div></div>
             </div>
           </article>
 
@@ -271,6 +269,8 @@
             <div class="card-body">
               <h3>Stress e benessere digestivo</h3>
               <p>Un approccio delicato per accompagnare la persona quando stress e tensioni si riflettono sul corpo, sul riposo e sull'apparato digestivo, in sinergia con il percorso medico.</p>
+              <button type="button" class="service-toggle" aria-expanded="false" aria-controls="svc-more-2">Scopri di più<span class="service-toggle-icon" aria-hidden="true"></span></button>
+              <div class="service-more" id="svc-more-2" hidden><div>
               <div class="service-groups">
                 <div>
                   <p class="service-label">Disturbi da stress</p>
@@ -281,6 +281,7 @@
                   <ul class="service-list"><li>Gonfiori</li><li>Reflusso gastroesofageo</li><li>Stipsi</li></ul>
                 </div>
               </div>
+              </div></div>
             </div>
           </article>
 
@@ -292,6 +293,8 @@
             <div class="card-body">
               <h3>Area pelvica e sport</h3>
               <p>Un percorso pensato per il benessere dell'area pelvica e per chi pratica attività fisica, con attenzione al recupero, alla mobilità e al gesto sportivo.</p>
+              <button type="button" class="service-toggle" aria-expanded="false" aria-controls="svc-more-3">Scopri di più<span class="service-toggle-icon" aria-hidden="true"></span></button>
+              <div class="service-more" id="svc-more-3" hidden><div>
               <div class="service-groups">
                 <div>
                   <p class="service-label">Disturbi uro-genitali</p>
@@ -302,6 +305,7 @@
                   <ul class="service-list"><li>Recupero post-trauma</li><li>Prevenzione</li><li>Performance</li></ul>
                 </div>
               </div>
+              </div></div>
             </div>
           </article>
 
@@ -313,6 +317,8 @@
             <div class="card-body">
               <h3>Pediatria e gravidanza</h3>
               <p>Un approccio dedicato ai più piccoli e alla donna nelle diverse fasi della maternità, con tecniche delicate e nel rispetto delle indicazioni di pediatra e ginecologo.</p>
+              <button type="button" class="service-toggle" aria-expanded="false" aria-controls="svc-more-4">Scopri di più<span class="service-toggle-icon" aria-hidden="true"></span></button>
+              <div class="service-more" id="svc-more-4" hidden><div>
               <div class="service-groups">
                 <div>
                   <p class="service-label">Pediatria</p>
@@ -323,6 +329,7 @@
                   <ul class="service-list"><li>Lombalgia e sciatalgia</li><li>Cefalee ed emicranie</li><li>Equilibrio post-parto e cicatrici</li></ul>
                 </div>
               </div>
+              </div></div>
             </div>
           </article>
         </div>
@@ -333,29 +340,9 @@
       </div>
     </section>
 
-    <!-- ============ LABORATORI — FDE8D5 ============ -->
-    <!-- Contenuti da completare con temi, date e sedi dei laboratori quando confermati -->
-    <section class="section bg-2" id="laboratori" aria-labelledby="laboratori-title">
-      <div class="container container-narrow">
-        <header class="section-head reveal">
-          <p class="eyebrow">Laboratori</p>
-          <h2 id="laboratori-title">Momenti di incontro e condivisione.</h2>
-          <p class="section-lead">Incontri dedicati al benessere e alla consapevolezza del corpo, pensati per condividere conoscenze ed esperienze in un clima accogliente.</p>
-        </header>
 
-        <div class="lab-card reveal">
-          <span class="icon-badge" aria-hidden="true">
-            <svg viewBox="0 0 64 64" focusable="false"><circle cx="32" cy="32" r="20"/><circle cx="32" cy="14" r="4" class="fill"/><circle cx="16.4" cy="41" r="4" class="fill"/><circle cx="47.6" cy="41" r="4" class="fill"/></svg>
-          </span>
-          <h3>Prossimi laboratori</h3>
-          <p>Le date e i temi dei prossimi incontri saranno pubblicati a breve. Per ricevere informazioni puoi scrivermi attraverso il modulo di contatto.</p>
-          <a class="btn btn-secondary" href="#contatti">Richiedi informazioni</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ COME FUNZIONA — FAF4E4 ============ -->
-    <section class="section bg-3" id="come-funziona" aria-labelledby="come-title">
+    <!-- ============ COME FUNZIONA — FDE8D5 ============ -->
+    <section class="section bg-2" id="come-funziona" aria-labelledby="come-title">
       <div class="container">
         <header class="section-head reveal">
           <p class="eyebrow">Come funziona</p>
@@ -390,8 +377,8 @@
       </div>
     </section>
 
-    <!-- ============ DOVE RICEVO — bianco ============ -->
-    <section class="section bg-1" id="dove-ricevo" aria-labelledby="dove-title">
+    <!-- ============ DOVE RICEVO — FAF4E4 ============ -->
+    <section class="section bg-3" id="dove-ricevo" aria-labelledby="dove-title">
       <div class="container">
         <header class="section-head reveal">
           <p class="eyebrow">Dove ricevo</p>
@@ -425,8 +412,8 @@
       </div>
     </section>
 
-    <!-- ============ FAQ — FDE8D5 ============ -->
-    <section class="section bg-2" id="faq" aria-labelledby="faq-title">
+    <!-- ============ FAQ — bianco ============ -->
+    <section class="section bg-1" id="faq" aria-labelledby="faq-title">
       <div class="container container-narrow">
         <header class="section-head reveal">
           <p class="eyebrow">FAQ</p>
@@ -458,8 +445,8 @@
       </div>
     </section>
 
-    <!-- ============ CONTATTI — FAF4E4 ============ -->
-    <section class="section bg-3" id="contatti" aria-labelledby="contatti-title">
+    <!-- ============ CONTATTI — FDE8D5 ============ -->
+    <section class="section bg-2" id="contatti" aria-labelledby="contatti-title">
       <div class="container">
         <header class="section-head reveal">
           <p class="eyebrow">Contatti</p>
@@ -520,7 +507,6 @@
           <li><a href="#a-chi-mi-rivolgo">A chi mi rivolgo</a></li>
           <li><a href="#approccio">Approccio</a></li>
           <li><a href="#servizi">Servizi</a></li>
-          <li><a href="#laboratori">Laboratori</a></li>
           <li><a href="#come-funziona">Come funziona</a></li>
           <li><a href="#dove-ricevo">Dove ricevo</a></li>
           <li><a href="#faq">FAQ</a></li>
